@@ -1,0 +1,25 @@
+{
+	"name": "policybgp",
+	"image": "mcr.microsoft.com/devcontainers/go",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"postCreateCommand": ".devcontainer/postCreate.sh",
+	"runArgs": ["--init", "--privileged"],
+	"mounts": [],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/usr/bin/zsh",
+					},
+				},
+			},
+			"extensions": [
+				"golang.go"
+			]
+		}
+	}
+}
