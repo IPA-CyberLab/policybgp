@@ -34,7 +34,8 @@ archives:
     {{- if .Arm }}v{{ .Arm }}{{ end -}}
 
 kos:
-- repositories:
+- main: ./cmd/policybgp
+  repositories:
   - ghcr.io/ipa-cyberlab/policybgp
   tags:
   - "{{ .Version }}"
@@ -49,7 +50,7 @@ checksum:
   name_template: 'checksums.txt'
 
 snapshot:
-  name_template: "{{ .Tag }}-next"
+  version_template: "{{ .Tag }}-next"
 
 changelog:
   sort: asc
