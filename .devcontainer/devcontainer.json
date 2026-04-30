@@ -2,7 +2,7 @@
 	"name": "policybgp",
 	"image": "mcr.microsoft.com/devcontainers/go",
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {}
+		"ghcr.io/devcontainers/features/node:2": {}
 	},
 	"postCreateCommand": ".devcontainer/postCreate.sh",
 	"runArgs": ["--init", "--privileged"],
