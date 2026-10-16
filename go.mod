@@ -1,10 +1,12 @@
 module github.com/IPA-CyberLab/policybgp
 
-go 1.24.2
+go 1.25.0
 
 require (
+	github.com/osrg/gobgp/v4 v4.0.0-20250524055545-97415840624c
 	github.com/urfave/cli/v3 v3.3.3
 	go.uber.org/zap v1.27.0
+	google.golang.org/protobuf v1.33.0
 )
 
 require (
@@ -17,7 +19,6 @@ require (
 	github.com/k-sone/critbitgo v1.4.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/osrg/gobgp/v4 v4.0.0-20250524055545-97415840624c // indirect
 	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/afero v1.9.5 // indirect
@@ -29,12 +30,11 @@ require (
 	github.com/vishvananda/netlink v1.2.1 // indirect
 	github.com/vishvananda/netns v0.0.4 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
+	golang.org/x/net v0.55.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
 	google.golang.org/grpc v1.64.1 // indirect
-	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
